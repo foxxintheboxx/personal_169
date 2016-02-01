@@ -34,7 +34,7 @@ end
 def binary_multiple_of_4? s
 	return false if s.length == 0
 	s =~ /([^01])/
-        return false if $1 != nil
+  return false if $1 != nil
 	s =~ /([0]+)?(1[01]*)?/
 	return true if ($2 == nil && $1 != nil)
 	s = $2  # remove zeros
